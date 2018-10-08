@@ -315,6 +315,7 @@ class ImageClass():
         return len(self.image_paths)
   
 def get_dataset(path, has_class_directories=True):
+    # return a list of ImageClass, which contains image name and path
     dataset = []
     path_exp = os.path.expanduser(path)
     classes = [path for path in os.listdir(path_exp) \
